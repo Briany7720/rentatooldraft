@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo"></div>
+        <div class="title">Rent-A-Tool</div>
+        <div class="navigation">
+            <div class="tab">Home</div>
+            <div class="tab">Rent Tools</div>
+            <div class="tab">List Tools</div>
+            <div class="tab">Profile</div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="form-section">
+            <div class="container">
+                <div class="form-title">Tool Registration Form</div>
+                <div class="form-description">Please provide the following details to list your tool for rent:</div>
+            </div>
+            <form id="registrationForm" class="form-list" action="php/handleRegistration.php" method="POST" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">First Name</div>
+                        <div class="textfield">
+                            <input type="text" name="firstName" placeholder="Enter your first name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Last Name</div>
+                        <div class="textfield">
+                            <input type="text" name="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Contact Info</div>
+                        <div class="textfield">
+                            <input type="text" name="phoneNumber" placeholder="Enter your contact information">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Email</div>
+                        <div class="textfield">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Password</div>
+                        <div class="textfield">
+                            <input type="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Profile Photo</div>
+                        <div class="textfield">
+                            <input type="file" name="profilePhoto" accept="image/png, image/jpeg">
+                        </div>
+                        <div class="info">Accepted formats: JPG, PNG</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Identification</div>
+                        <div class="textfield">
+                            <input type="file" name="identification" accept="image/png, image/jpeg" required>
+                        </div>
+                        <div class="info">Accepted formats: JPG, PNG</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">Proof of Address</div>
+                        <div class="textfield">
+                            <input type="file" name="proofOfAddress" accept="application/pdf, image/jpeg" required>
+                        </div>
+                        <div class="info">Accepted formats: PDF, JPG</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input">
+                        <div class="input-title">User  Type</div>
+                        <div class="textfield">
+                            <select name="userType" required>
+                                <option value="Owner">Owner</option>
+                                <option value="Renter">Renter</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="primary">Submit</button>
+                </div>
+            </form>
+            <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
+                Registration successful! <a href="html/login.html">Click here to login</a>.
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">© 2025 Rent-A-Tool. All rights reserved.</div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

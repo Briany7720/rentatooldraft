@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: #000000;
+    color: #FFA500;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 100px;
+}
+
+.title {
+    flex: 1;
+    font-size: 28px;
+    font-weight: 500;
+    color: #FFA500;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.tab {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFA500;
+}
+
+/* Page */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    background: #FFFFFF;
+}
+
+/* Form Section */
+.form-section {
+    width: 100%;
+    padding: 60px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.form-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.textfield input,
+.textfield textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Button */
+.button {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.primary {
+    padding: 12px 24px;
+    background: #FFA500;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.primary:hover {
+    background: #FF8C00;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: #000000;
+    color: #FFA500;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+}
+
+.footer-text {
+    font-size: 20px;
+    font-weight: 400;
+},
