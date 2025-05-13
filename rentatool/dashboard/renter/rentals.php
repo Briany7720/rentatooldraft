@@ -29,7 +29,7 @@ $stmt = $pdo->prepare("
     JOIN Tool t ON r.ToolID = t.ToolID
     JOIN User o ON t.OwnerID = o.UserID
     WHERE r.RenterID = :renterID
-    ORDER BY r.RentalStartDate DESC
+    ORDER BY r.RentalID DESC
 ");
 $stmt->execute(['renterID' => $_SESSION['user_id']]);
 $rentalRequests = $stmt->fetchAll(PDO::FETCH_ASSOC);
