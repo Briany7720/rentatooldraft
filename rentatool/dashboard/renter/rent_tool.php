@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]);
 
         $pdo->commit();
-        $success = "Rental request submitted successfully! <a href='<?php echo BASE_URL; ?>dashboard/renter/renter_dashboard.php' class='text-blue-600 hover:underline'>Return to Dashboard</a>";
+        $success = "Rental request submitted successfully! <a href='" . BASE_URL . "dashboard/renter/index.php' class='text-blue-600 hover:underline'>Return to Dashboard</a>";
 
     } catch (Exception $e) {
         if ($pdo->inTransaction()) {
